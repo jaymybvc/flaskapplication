@@ -1,0 +1,24 @@
+<!-- templates/addservice.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Service</title>
+</head>
+<body>
+   
+    <ul>
+        {% for service in services %}
+            <li>
+                <img src="{{ url_for('get_image', service_name=service[0], main_service =service[2] ) }}" alt="{{ service[3] }}">
+
+                <p style="color:red;">Service Name: {{ service[0] }}</p>
+                <p>Description: {{ service[1] }}</p>
+              
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
