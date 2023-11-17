@@ -56,8 +56,8 @@ def get_image(service_name, main_service):
 # POST methods
 @app.route('/insert_data', methods=['POST'])
 def insert_data():
-    query = "INSERT INTO user_info (email, name) VALUES (%s, %s)"
-    cursor.execute(query, (request.form['email'], request.form['name']))
+    query = "INSERT INTO user_info (email, name, subject, message) VALUES (%s, %s, %s, %s)"
+    cursor.execute(query, (request.form['email'], request.form['name'],request.form['subject'],request.form['subject']))
     conn.commit()
     return "Data inserted successfully."
 
