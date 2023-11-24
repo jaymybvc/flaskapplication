@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, send_file
+from flask import Flask, render_template, request, send_file, flash
 import mysql.connector
 from io import BytesIO
 
@@ -27,13 +27,31 @@ def index():
 def about():
     return render_template('about.html')
 
-@app.route('/form')
-def form():
-    return render_template('form.html')
-
 @app.route('/addservice')
 def addservice():
     return render_template('addservice.html')
+
+@app.route('/Iaas')
+def Iaas():
+    return render_template('Iaas.html')
+
+@app.route('/Paas')
+def Paas():
+    return render_template('Paas.html')
+
+@app.route('/Saas')
+def Saas():
+    return render_template('Saas.html')
+
+@app.route('/Saas1')
+def Saas1():
+    return render_template('Saas1.html')
+
+@app.route('/Saas2')
+def Saas2():
+    return render_template('Saas2.html')
+
+
     
 # GET method
 @app.route('/get_service_details/<main_service>', methods=['GET'])
@@ -59,7 +77,9 @@ def insert_data():
     query = "INSERT INTO user_info (email, name, subject, message) VALUES (%s, %s, %s, %s)"
     cursor.execute(query, (request.form['email'], request.form['name'],request.form['subject'],request.form['subject']))
     conn.commit()
-    return "Data inserted successfully."
+   
+    message = 'Data successfully inserted!'
+    return render_template('index.html',message=message)
 
 @app.route('/upload', methods=['POST'])
 def upload():
