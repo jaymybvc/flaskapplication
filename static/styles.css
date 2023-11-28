@@ -1818,3 +1818,85 @@ body {
     padding: 10px;
     margin-bottom: 20px;
 }
+/* SAAS BUTTONS */
+
+.hero .btn-get-started {
+  margin-top: 30px;
+  line-height: 0;
+  padding: 25px 40px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #000000;
+  box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
+}
+
+.hero .btn-get-started span {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.hero .btn-get-started i {
+  margin-left: 5px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  }
+  
+.head{
+  color:black;
+  font-weight: 600;
+  font-size: 45px;
+  letter-spacing: 1px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+thead {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+thead {
+  font-size:20px;
+  background-color: #209dd8;
+}
+
+tr:nth-child(even) {
+  background-color: #37517e;
+}
+.blue-text {
+  color: #37517e;
+}
+.white-text{
+  color: #f9f9f9;
+}

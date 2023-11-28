@@ -28,8 +28,59 @@
   <main id="main">
 
    
-    
-    
+     <!--Services of IAAS-->
+     <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services of IaaS</h2>
+         
+        </div>
+
+        <div class="row">
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box"><img src="{{ url_for('static', filename='img/networking.jpg') }}" class="img-fluid" alt=""><br><br>
+              <!-- <div class="icon"><i class="bx bxl-dribbble"></i></div> -->
+               <h4><a>Networking</a></h4> 
+              <p><h5>When focusing on cloud deployments, organizations need to ask certain questions to make sure that the provisioned infrastructure in the cloud can be accessed in an efficient manner.</p></h5>
+            </div>
+          </div>
+
+          
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+             
+                <img src="{{ url_for('static', filename='img/storage.png') }}" class="img-fluid" alt="">&nbsp;&nbsp;&nbsp;&nbsp;
+              <h4><a>Storage</a></h4>
+              <p><h5>Organizations should consider requirements for storage types, required storage performance levels, possible space needed, provisioning and potential options such as object storage.
+              </p></h5>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <img src="{{ url_for('static', filename='img/compute.png') }}" class="img-fluid" alt=""><br><br>
+              
+              <h4><a>Compute</a></h4>
+              <p><h5>Organizations should consider the implications of different server, VM, CPU and memory options that cloud providers can offer.</h5></p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+            <div class="icon-box">
+              <img src="{{ url_for('static', filename='img/Security-cloud.png') }}" class="img-fluid" alt=""><br><br>
+              
+              <h4><a>Security	</a></h4>
+              <p><h5>Data security should be of paramount importance when evaluating cloud services and providers. Questions about data encryption, certifications, compliance and regulation, and secure workloads should be pursued in detail.</h5></p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
     <!-- ======= Services Section ======= -->
     <section id="services" class="services section-bg">
       <div class="container" data-aos="fade-up">
@@ -41,8 +92,7 @@
 
         <div class="row">
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box"> 
-              <img src="{{ url_for('static', filename='img/speed.jpg') }}" class="img-fluid" alt=""><br><br>
+            <div class="icon-box"><img src="{{ url_for('static', filename='img/speed.jpg') }}" class="img-fluid" alt=""><br><br>
               <!-- <div class="icon"><i class="bx bxl-dribbble"></i></div> -->
                <h4><a>Speed</a></h4> 
               <p><h5>You can provision any number of resources within minutes, testing, and launching new ideas to market much faster. You can focus on your core business activities because others fully manage the IT infrastructure and computing resources.</p></h5>
@@ -75,7 +125,7 @@
             <div class="icon-box">
               <img src="{{ url_for('static', filename='img/price.png') }}" class="img-fluid" alt=""><br><br>
               
-              <h4><a href="">Competitive pricing</a></h4>
+              <h4><a>Competitive pricing</a></h4>
               <p><h5>IaaS is a cloud computing model in which customers pay only for the resources they use. Such a setup encourages more efficient IT resource management and promotes innovation by making cloud services affordable to small businesses.</h5></p>
             </div>
           </div>
@@ -86,71 +136,51 @@
     </section><!-- End Services Section -->
 
     
-
-   
     
-    <!-- ======= Pricing Section ======= -->
-    <section id="pricing" class="pricing">
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Pricing</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Frequently Asked Questions</h2>
         </div>
 
-        <div class="row">
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">What is Air Creator? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  Air Creator is a fully managed PaaS platform for developers. It supports multiple programming languages, provides a developer-friendly environment, and abstracts infrastructure management.
+                </p>
+              </div>
+            </li>
 
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="box">
-              <h3>Free Plan</h3>
-              <h4><sup>$</sup>0<span>per month</span></h4>
-              <ul>
-                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-                <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-              </ul>
-              <a href="#" class="buy-btn">Get Started</a>
-            </div>
-          </div>
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">What are the benefits of Air Creator?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Air Creator reduces coding time and provides customization,flexibility and scalability.
+                </p>
+              </div>
+            </li>
 
-          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
-            <div class="box featured">
-              <h3>Business Plan</h3>
-              <h4><sup>$</sup>29<span>per month</span></h4>
-              <ul>
-                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-                <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
-                <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
-              </ul>
-              <a href="#" class="buy-btn">Get Started</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <div class="box">
-              <h3>Developer Plan</h3>
-              <h4><sup>$</sup>49<span>per month</span></h4>
-              <ul>
-                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-                <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
-                <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
-              </ul>
-              <a href="#" class="buy-btn">Get Started</a>
-            </div>
-          </div>
-
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">How secure is my data in Air Creator's cloud?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Air Creator uses data encryption and wirefall to secure the cusotmers data.It also provides data backups and redundancy.
+                </p>
+              </div>
+            </li>
+          </ul>
         </div>
 
       </div>
-    </section><!-- End Pricing Section -->
+    </section><!-- End Frequently Asked Questions Section -->
 
     
+   
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
@@ -198,6 +228,51 @@
 
       </div>
     </section><!-- End Contact Section -->
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <section id="pricing" class="pricing">
+            <div class="container" data-aos="fade-up">
+      
+              <div class="section-title">
+      
+                <div class="footer-newsletter">
+                  <div class="container">
+                    <div class="row justify-content-center">
+                      <div class="col-lg-6">
+                        <div class="head"><h2> Our other offerings</h2></div>
+                        <h4>PaaS</h4>
+            
+                        <p>Checkout our PaaS related services</p><br>
+                        <a href="/Paas" class="buy-btn">Take me there</a>
+                    </div>
+            
+            
+                  </div>
+                </div>
+            
+                <div class="footer-newsletter">
+                  <div class="container">
+                    <div class="row justify-content-center">
+                      <div class="col-lg-6">
+                        <h4>SaaS</h4>
+                        <p>Checkout our SaaS related services</p><br>
+                        <a href="/Saas" class="buy-btn">Take me there</a>
+                    </div>
+            
+            
+                  </div>
+                </div>
+              </div>
+      
+            </div>
+          </section>
+        </div>
+
+
+      </div>
+    </div>
+
 
   </main><!-- End #main -->
 
