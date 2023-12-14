@@ -1,9 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 <body>
-
-    
-  
+  <script type="text/javascript"> let headID = document.getElementsByTagName("head")[0]; let newCss = document.createElement('link'); newCss.rel = 'stylesheet'; newCss.type = 'text/css'; newCss.href = "https://botmake.io/embed/bot1631895.css"; let newScript = document.createElement('script'); newScript.src = "https://botmake.io/embed/bot1631895.js"; newScript.type = 'text/javascript'; headID.appendChild(newScript); headID.appendChild(newCss); </script>
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="d-flex align-items-center">
   
@@ -40,7 +38,7 @@
           <div class="row">
             <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
               <div class="icon-box">
-                <img src="{{ url_for('static', filename='img/cost savings.webp') }}" class="img-fluid" alt="" type="image/webp"><br><br>
+                <img src="{{ url_for('static', filename='img/cost savings.png') }}" class="img-fluid" alt="" type="image/webp"><br><br>
                 <!-- <div class="icon"><i class="bx bxl-dribbble"></i></div> -->
                  <h4><a>Cost Savings</a></h4> 
                 <p><h5>No Upfront Investment: SaaS eliminates the need for organizations to invest in hardware, software licenses, and infrastructure, as these are typically provided by the SaaS vendor.
@@ -52,7 +50,7 @@
   
             <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
               <div class="icon-box">
-                <img src="{{ url_for('static', filename='img/rapid.jpeg') }}" class="img-fluid" alt="">&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="{{ url_for('static', filename='img/rapid.png') }}" class="img-fluid" alt="">&nbsp;&nbsp;&nbsp;&nbsp;
                 <h4><a>Rapid Deployment</a></h4>
                 <p><h5>Quick Implementation: SaaS applications can be deployed rapidly since there's no need for lengthy installation processes or infrastructure setup. Users can often start using the software almost immediately after subscribing or in some case by just signing in.
   
@@ -63,7 +61,7 @@
             <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
               <div class="icon-box">
              
-                <img src="{{ url_for('static', filename='img/security.jpg') }}" class="img-fluid" alt=""><br><br>
+                <img src="{{ url_for('static', filename='img/security and pro.png') }}" class="img-fluid" alt=""><br><br>
                 <h4><a>Security and Data Protection</a></h4>
                 <p><h5>Data Protection: SaaS providers often implement robust security measures, including data encryption, regular backups, and secure access controls, to protect user data.</h5></p>
               </div>
@@ -72,7 +70,7 @@
             <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
               <div class="icon-box">
                 
-                <img src="{{ url_for('static', filename='img/Accessibility.webp') }}" class="img-fluid" alt=""><br><br>
+                <img src="{{ url_for('static', filename='img/Accessibility.png') }}" class="img-fluid" alt=""><br><br>
                 
                 <h4><a>Accessibility and Collaboration</a></h4>
                 <p><h5>Access SaaS apps anytime, anywhere: SaaS applications may be accessed via a web browser, enabling users to access data and software from any internet-connected device. Better Collaboration: SaaS frequently include collaboration tools that encourage users to communicate and work together regardless of where they are physically located.</h5></p>
@@ -129,80 +127,103 @@
         </div>
       </section><!-- End Pricing Section -->
   
-      <!-- ======= Frequently Asked Questions Section ======= -->
-      <section id="faq" class="faq section-bg">
-        <div class="container" data-aos="fade-up">
-  
-          <div class="section-title">
-            <h2>Frequently Asked Questions</h2>
-          </div>
-  
-          <div class="faq-list">
-            <ul>
-              <li data-aos="fade-up" data-aos-delay="100">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">How is SaaS different from traditional software? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
-                  <p>
-                    Unlike traditional software, SaaS eliminates the need for users to install, manage, and update applications on their devices. It is hosted and maintained by a third-party provider, allowing users to access the software through a subscription model.
-                  </p>
-                </div>
-              </li>
-  
-              <li data-aos="fade-up" data-aos-delay="200">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">What are the key benefits of using SaaS? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    SaaS offers benefits such as cost-effectiveness, automatic updates, scalability, accessibility from anywhere with an internet connection, and reduced IT infrastructure requirements.
-                  </p>
-                </div>
-              </li>
-  
-              <li data-aos="fade-up" data-aos-delay="300">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Is SaaS secure? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    Yes, SaaS providers implement robust security measures to protect user data. This includes encryption, regular security updates, and compliance with industry standards.
-                  </p>
-                </div>
-              </li>
-  
-              <li data-aos="fade-up" data-aos-delay="400">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Can SaaS applications integrate with other software? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    Yes, many SaaS applications provide APIs (Application Programming Interfaces) or integrations with other commonly used business software, facilitating seamless data flow between different tools.
-                  </p>
-                </div>
-              </li>
-  
-              <li data-aos="fade-up" data-aos-delay="500">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed"> How do I ensure compliance when using SaaS for sensitive data? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    It's essential to choose SaaS providers that adhere to relevant data protection regulations. Review the provider's compliance certifications and security practices to ensure alignment with your organization's compliance requirements.
-                  </p>
-                </div>
-              </li>
-  
-            </ul>
-          </div>
-  
+     <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
         </div>
-      </section><!-- End Frequently Asked Questions Section -->
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">How is SaaS different from traditional software? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  Unlike traditional software, SaaS eliminates the need for users to install, manage, and update applications on their devices. It is hosted and maintained by a third-party provider, allowing users to access the software through a subscription model.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-1" class="collapse">What are the key benefits of using SaaS? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  SaaS offers benefits such as cost-effectiveness, automatic updates, scalability, accessibility from anywhere with an internet connection, and reduced IT infrastructure requirements.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-1" class="collapse">Is SaaS secure? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  Yes, SaaS providers implement robust security measures to protect user data. This includes encryption, regular security updates, and compliance with industry standards.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-1" class="collapse">Can SaaS applications integrate with other software? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  Yes, many SaaS applications provide APIs (Application Programming Interfaces) or integrations with other commonly used business software, facilitating seamless data flow between different tools.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="500">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-1" class="collapse"> How do I ensure compliance when using SaaS for sensitive data? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  It's essential to choose SaaS providers that adhere to relevant data protection regulations. Review the provider's compliance certifications and security practices to ensure alignment with your organization's compliance requirements.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
   
-     <!-- ======= Contact Section ======= -->
-<section id="contact" class="contact">
+   <!-- ======= Contact Section ======= -->
+ <section id="contact" class="contact">
   <div class="container" data-aos="fade-up">
 
     <div class="section-title">
       <h2>Contact</h2>
-     
-    </div>
       
-      <div class="col-lg-13 mt-5 mt-lg-0 d-flex align-items-stretch">
-        <div id="result"></div>
-        <form   role="form" class="php-email-form">
-          
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-6 d-flex align-items-stretch">
+        <div class="info">
+          <div class="address">
+            
+          </div>
+
+          <div class="email">
+            <i class="bi bi-envelope"></i>
+            <h4>Email:</h4>
+            <p>aircloud@gmail.com</p>
+          </div>
+
+          <div class="phone">
+            <i class="bi bi-phone"></i>
+            <h4>Call:</h4>
+            <p>+1 55894 55488 </p>
+          </div>
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2508.3337719162528!2d-114.05857222336289!3d51.046924544238074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53717ad00ad231a9%3A0x34c6c179aae00af8!2sBow%20Valley%20College%2C%20South%20Campus!5e0!3m2!1sen!2sca!4v1702276423083!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+        </div>
+
+      </div>
+
+      <div class="col-lg-6 mt-5 mt-lg-0 d-flex align-items-stretch">
+        <form  role="form" class="php-email-form" id ="myForm">
           <div class="row">
             <div class="form-group col-md-6">
               <label for="name">Your Name</label>
@@ -219,10 +240,10 @@
           </div>
           <div class="form-group">
             <label for="name">Message</label>
-            <textarea class="form-control" name="message" rows="10" required></textarea>
+            <textarea class="form-control" name="message" rows="10" id="message"  required></textarea>
           </div>
          
-          <div class="text-center"><button type="submit" onclick="submitForm()">Send Message</button></div>
+          <div class="text-center"><button type="submit" value="Submit">Send Message</button></div>
         </form>
       </div>
 
@@ -230,6 +251,7 @@
 
   </div>
 </section><!-- End Contact Section -->
+
 
 </main><!-- End #main -->
  

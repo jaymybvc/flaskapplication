@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, send_file, flash
+from flask import Flask, render_template, request, send_file, jsonify
 import mysql.connector
 from io import BytesIO
 
@@ -74,12 +74,19 @@ def get_image(service_name, main_service):
 # POST methods
 @app.route('/insert_data', methods=['POST'])
 def insert_data():
-    query = "INSERT INTO user_info (email, name, subject, message) VALUES (%s, %s, %s, %s)"
-    cursor.execute(query, (request.form['email'], request.form['name'],request.form['subject'],request.form['subject']))
-    conn.commit()
-   
-    message = 'Data successfully inserted!'
-    return render_template('index.html',message=message)
+    try:
+        data = request.get_json()
+        query = "INSERT INTO user_info (email, name, subject, message) VALUES (%s, %s, %s, %s)"
+        cursor.execute(query, (data.get('email'), data.get('name'),data.get('subject'),data.get('message')))
+        conn.commit()
+        
+        response = "Data submitted successfully!"
+        return jsonify(response)
+    
+    except Exception as e:
+        # Handle any exceptions and return an error message
+        error_message = f"Error submitting the form: {str(e)}"
+        return jsonify(error_message), 500
 
 @app.route('/upload', methods=['POST'])
 def upload():

@@ -1,282 +1,551 @@
 {% extends "base.html" %}
 {% block content %}
 
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-          <h1>What is IaaS?</h1>
-          <h2>
-            Infrastructure as a Service (IaaS) is a business model that delivers IT infrastructure like compute, storage, and network resources on a pay-as-you-go basis over the internet.You are responsible for deploying, maintaining, and supporting your applications, and the IaaS provider is responsible for maintaining the physical infrastructure. Infrastructure as a Service gives you flexibility and control over your IT resources in a cost-effective manner.</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+        <h1>What is IaaS?</h1>
+        <h2>
+          Infrastructure as a Service (IaaS) is a business model that delivers IT infrastructure like compute, storage, and network resources on a pay-as-you-go basis over the internet.You are responsible for deploying, maintaining, and supporting your applications, and the IaaS provider is responsible for maintaining the physical infrastructure. Infrastructure as a Service gives you flexibility and control over your IT resources in a cost-effective manner.</h2>
+        
+        <div class="d-flex justify-content-center justify-content-lg-start">
           
-          <div class="d-flex justify-content-center justify-content-lg-start">
-            
+          
+        </div>
+      </div>
+      <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+       <img src="{{ url_for('static', filename='img/iaas-service.png') }}" class="img-fluid animated" alt="">
+      </div>
+    </div>
+  </div>
+
+</section><!-- End Hero -->
+
+<div class="section-title">
+  <br>
+  <h2>Our Services</h2>
+</div>
+
+<!-- ======= Clients Section ======= -->
+
+<section id="skills" class="skills">
+  <div class="container" data-aos="fade-up">
+    <div class="row">
+      <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
+       <img src="{{ url_for('static', filename='img/cloud-storage.png') }}" class="img-fluid" alt="">
+      </div>
+      <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+        <h3>Air Stack</h3>
+        <h4 class="fst-italic">
+          At Air-Cloud, we are storage experts. We realized long ago that the biggest challenge businesses face with their data is how to store it affordably, reliably and securely.So, thats why we are introducing Air-stack. A cloud-based object storage service which is reliable, scalable and is compatible with our other services.
+        </h4>
+        <br>
+        
+
+        <div class="skills-content">
+          <h4 style="color: rgb(29, 144, 183);">PERFORMANCE</h4 >
+
+          <div class="progress">
+           <h4><span class="skill">AIR STACK <i class="val">97%</i></span>
+            <span class="skill">S3<i class="val">82%</i></span></h4>
             
           </div>
+
+         
+          <div class="progress">
+           <h4><span class="skill">BLOB<i class="val">84%</i></span>
+            <span class="skill">GCS <i class="val">89%</i></span></h4>
+            
+          </div>
+
         </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-          <img src="{{ url_for('static', filename='img/iaas-service.png') }}" class="img-fluid animated" alt="">
-        </div>
+
       </div>
     </div>
 
-  </section><!-- End Hero -->
+  </div>
+</section>
 
-  <main id="main">
+<section id="services" class="services section-bg">
+  <div class="container" data-aos="fade-up">
 
-   
-     <!--Services of IAAS-->
-     <section id="services" class="services section-bg">
-      <div class="container" data-aos="fade-up">
+    <div class="section-title">
+      <h2>Features of Air Stack</h2>
+     
+    </div>
 
-        <div class="section-title">
-          <h2>Services of IaaS</h2>
-         
+    <div class="row">
+      <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+        <div class="icon-box"><img src="{{ url_for('static', filename='img/price1.png') }}" class="img-fluid" alt=""><br><br>
+          <!-- <div class="icon"><i class="bx bxl-dribbble"></i></div> -->
+           <h4><a>Price</a></h4> 
+          <p><h5>75% less than AWS S3.</p></h5>
+          <p><h5>No API and Hideen charges.</h5></p>
         </div>
-
-        <div class="row">
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box"><img src="{{ url_for('static', filename='img/networking.jpg') }}" class="img-fluid" alt=""><br><br>
-              <!-- <div class="icon"><i class="bx bxl-dribbble"></i></div> -->
-               <h4><a>Networking</a></h4> 
-              <p><h5>When focusing on cloud deployments, organizations need to ask certain questions to make sure that the provisioned infrastructure in the cloud can be accessed in an efficient manner.</p></h5>
-            </div>
-          </div>
-
-          
-
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box">
-             
-                <img src="{{ url_for('static', filename='img/storage.png') }}" class="img-fluid" alt="">&nbsp;&nbsp;&nbsp;&nbsp;
-              <h4><a>Storage</a></h4>
-              <p><h5>Organizations should consider requirements for storage types, required storage performance levels, possible space needed, provisioning and potential options such as object storage.
-              </p></h5>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box">
-              <img src="{{ url_for('static', filename='img/compute.png') }}" class="img-fluid" alt=""><br><br>
-              
-              <h4><a>Compute</a></h4>
-              <p><h5>Organizations should consider the implications of different server, VM, CPU and memory options that cloud providers can offer.</h5></p>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
-            <div class="icon-box">
-              <img src="{{ url_for('static', filename='img/Security-cloud.png') }}" class="img-fluid" alt=""><br><br>
-              
-              <h4><a>Security	</a></h4>
-              <p><h5>Data security should be of paramount importance when evaluating cloud services and providers. Questions about data encryption, certifications, compliance and regulation, and secure workloads should be pursued in detail.</h5></p>
-            </div>
-          </div>
-
-        </div>
-
       </div>
-    </section><!-- End Services Section -->
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services section-bg">
-      <div class="container" data-aos="fade-up">
+      
 
-        <div class="section-title">
-          <h2>What are the benefits of Infrastructure as a Service?</h2>
+      <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+        <div class="icon-box">
          
-        </div>
-
-        <div class="row">
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box"><img src="{{ url_for('static', filename='img/speed.jpg') }}" class="img-fluid" alt=""><br><br>
-              <!-- <div class="icon"><i class="bx bxl-dribbble"></i></div> -->
-               <h4><a>Speed</a></h4> 
-              <p><h5>You can provision any number of resources within minutes, testing, and launching new ideas to market much faster. You can focus on your core business activities because others fully manage the IT infrastructure and computing resources.</p></h5>
-            </div>
-          </div>
-
+         <img src="{{ url_for('static', filename='img/performance.png') }}" class="img-fluid" alt="">&nbsp;&nbsp;&nbsp;&nbsp;
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <h4><a>Performance</a></h4>
           
-
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box">
-             
-                <img src="{{ url_for('static', filename='img/performance.png') }}" class="img-fluid" alt="">&nbsp;&nbsp;&nbsp;&nbsp;
-              <h4><a>Performance</a></h4>
-              <p><h5>Cloud providers have geographically distributed data centers that you can use to scale up your applications in locations that are physically closer to your customers.IaaS solutions give you a lot more options that you can use to both increase compute performance and reduce network latency.
-
-              </p></h5>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box">
-              <img src="{{ url_for('static', filename='img/backup.jpg') }}" class="img-fluid" alt=""><br><br>
-              
-              <h4><a>Back up and recovery</a></h4>
-              <p><h5>IaaS providers give you access to unlimited infrastructure for backup and disaster recovery. For example, you can duplicate your applications across multiple servers so that if one fails, another takes over.</h5></p>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
-            <div class="icon-box">
-              <img src="{{ url_for('static', filename='img/price.png') }}" class="img-fluid" alt=""><br><br>
-              
-              <h4><a>Competitive pricing</a></h4>
-              <p><h5>IaaS is a cloud computing model in which customers pay only for the resources they use. Such a setup encourages more efficient IT resource management and promotes innovation by making cloud services affordable to small businesses.</h5></p>
-            </div>
-          </div>
-
+          <p><h5>Quick uploads and downloads as compared to other services.</p></h5>
+          <p><h5>Private Network options</h5></p>
         </div>
-
       </div>
-    </section><!-- End Services Section -->
 
-    
-    
-    <!-- ======= Frequently Asked Questions Section ======= -->
-    <section id="faq" class="faq section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Frequently Asked Questions</h2>
+      <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+        <div class="icon-box">
+         <img src="{{ url_for('static', filename='img/sec.png') }}" class="img-fluid" alt=""><br><br>
+          
+          <h4><a>Protection</a></h4>
+          <p><h5>Data Center Redundancy.</h5></p>
+          <p><h5>Immutable storage</h5></p>
         </div>
+      </div>
 
-        <div class="faq-list">
-          <ul>
-            <li data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">What is Air Creator? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+      <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+        <div class="icon-box">
+          <img src="{{ url_for('static', filename='img/scalability.jpg') }}" class="img-fluid" alt=""><br><br>
+          
+          <h4><a>Scalability</a></h4>
+          <p><h5>The service is scalable, accommodating businesses of various sizes and allowing them to scale up or down as needed.</h5></p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Services Section -->
+
+
+
+
+<!-- ======= Pricing Section ======= -->
+<section id="pricing" class="pricing">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>Comparisons</h2>
+    </div>
+
+    <div class="row">
+      <table>
+        <thead>
+            <tr>
+                <th class="white-text">Property</th>
+                <th class="white-text">Air Stack</th>
+                <th class="white-text">S3</th>
+                <th class="white-text">Azure blob</th>
+                <th class="white-text">GCS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="blue-text" style="font-size: 20px;"><strong>Components</strong></td>
+                <td class="blue-text"><strong>Data Packets </strong></td>
+                <td class="blue-text"><strong>Buckets and Objects</strong></td>
+                <td class="blue-text"><strong>Storage account and container</strong></td>
+                <td class="blue-text"><strong>buckets</strong></td>
+            </tr>
+            <tr>
+
+                <td class="white-text" style="font-size: 20px;"><strong>Max file size</strong></td>
+                <td class="white-text"><strong>324 TB</strong></td>
+                <td class="white-text"><strong>5 TB</strong></td>
+                <td class="white-text"><strong>190 TB</strong></td>
+                <td class="white-text"><strong>5 TB</strong></td>
+            </tr>
+            <tr>
+              <td class="blue-text" style="font-size: 20px;"><strong>Max storage size</strong></td>
+              <td class="blue-text"><strong>Virtually unlimited</strong></td>
+              <td class="blue-text"><strong>Virtually unlimited</strong></td>
+              <td class="blue-text"><strong>Same as the Storage account</strong></td>
+              <td class="blue-text"><strong>Virtually unlimited</strong></td>
+            </tr>
+            <tr>
+              <td class="white-text" style="font-size: 20px;"><strong>Tiers</strong></td>
+              <td class="white-text"><strong>Diamond, platinum, gold</strong></td>
+              <td class="white-text"><strong>Standard, Standard-IA, Glacier</strong></td>
+              <td class="white-text"><strong>Hot, cool, archieve </strong></td>
+              <td class="white-text"><strong>Standard, nearline, coldline</strong></td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+<section id="faq" class="faq section-bg">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>Frequently Asked Questions</h2>
+    </div>
+
+    <div class="faq-list">
+      <ul>
+        <li data-aos="fade-up" data-aos-delay="100">
+          <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1"> What is Air stack? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
                 <p>
-                  Air Creator is a fully managed PaaS platform for developers. It supports multiple programming languages, provides a developer-friendly environment, and abstracts infrastructure management.
-                </p>
-              </div>
-            </li>
+                  Air Stack is a Air-Cloud service for storing large amounts of unstructured data, such as text and binary data, in the cloud.
+           
+            </p>
+          </div>
+        </li>
 
-            <li data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">What are the benefits of Air Creator?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  Air Creator reduces coding time and provides customization,flexibility and scalability.
-                </p>
-              </div>
-            </li>
+        <li data-aos="fade-up" data-aos-delay="100">
+          <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-1" class="collapsed">How Does Air Stack Storage Ensure Data Durability? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+          <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+            <p>
+              It uses replication strategies like Locally-Redundant Storage (LRS), Zone-Redundant Storage (ZRS), and Geo-Redundant Storage (GRS) to safeguard data against loss and ensure high availability.
+            </p>
+          </div>
+        </li>
 
-            <li data-aos="fade-up" data-aos-delay="300">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">How secure is my data in Air Creator's cloud?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  Air Creator uses data encryption and wirefall to secure the cusotmers data.It also provides data backups and redundancy.
-                </p>
-              </div>
-            </li>
-          </ul>
+        <li data-aos="fade-up" data-aos-delay="100">
+          <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-1" class="collapse"> Can Air Stack be used for hosting static websites? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+          <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+            <p>
+              Yes, Air Stack can host static websites directly from a storage container.
+            </p>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</section><!-- End Frequently Asked Questions Section -->
+<!-- ======= Frequently Asked Questions Section ======= -->
+
+<!--air sprout--> 
+
+<main id="mains">
+
+  <!-- ======= Clients Section ======= -->
+ 
+  
+  <!-- ======= Skills Section ======= -->
+  <section id="skills" class="skills">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row">
+        <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
+         <img src="{{ url_for('static', filename='img/microprocessor.png') }}" class="img-fluid" alt="">
         </div>
+        <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+          <h3>AIR Compute</h3>
+          <h4 class="fst-italic">
+            Air Compute: Where Innovation Takes Off and Computing Touches the Sky!
+          </h4>
+          <br>
 
-      </div>
-    </section><!-- End Frequently Asked Questions Section -->
+          <div class="skills-content">
+            <h4 style="color: rgb(29, 144, 183);">PERFORMANCE</h4 >
 
-    
-   
+            <div class="progress">
+              <h4><span class="skill">AIR Compute<i class="val">94%</i></span>
+              <span class="skill">Azure Virtual Machines <i class="val">86%</i></span></h4>
+              
+            </div>
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
+            <div class="progress">
+              
+              <h4><span class="skill">Ec2 <i class="val">91%</i></span>
+              <span class="skill">Google Compute Engine<i class="val">81%</i></span></h4>
+            </div>
 
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p></p>
-        </div>
 
-        <div class="row">
+            
 
-          
-
-        <div class="col-lg-16 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
-              </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
           </div>
 
         </div>
-
       </div>
-    </section><!-- End Contact Section -->
-    <div class="footer-newsletter">
-      <div class="container">
-        <div class="row justify-content-center">
-          <section id="pricing" class="pricing">
-            <div class="container" data-aos="fade-up">
-      
-              <div class="section-title">
-      
-                <div class="footer-newsletter">
-                  <div class="container">
-                    <div class="row justify-content-center">
-                      <div class="col-lg-6">
-                        <div class="head"><h2> Our other offerings</h2></div>
-                        <h4>PaaS</h4>
-            
-                        <p>Checkout our PaaS related services</p><br>
-                        <a href="/Paas" class="buy-btn">Take me there</a>
-                    </div>
-            
-            
-                  </div>
-                </div>
-            
-                <div class="footer-newsletter">
-                  <div class="container">
-                    <div class="row justify-content-center">
-                      <div class="col-lg-6">
-                        <h4>SaaS</h4>
-                        <p>Checkout our SaaS related services</p><br>
-                        <a href="/Saas" class="buy-btn">Take me there</a>
-                    </div>
-            
-            
-                  </div>
-                </div>
-              </div>
-      
-            </div>
-          </section>
-        </div>
 
-
-      </div>
     </div>
-
-
-  </main><!-- End #main -->
+  </section><!-- End Skills Section -->
 
   
+  <!-- ======= Services Section ======= -->
+  <section id="services" class="services section-bg">
+    <div class="container" data-aos="fade-up">
 
+      <div class="section-title">
+        <h2>Features of Air Compute</h2>
+       
+      </div>
+
+      <div class="row">
+        <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box"><img src="{{ url_for('static', filename='img/speed.jpg') }}" class="img-fluid" alt=""><br><br>
+            <!-- <div class="icon"><i class="bx bxl-dribbble"></i></div> -->
+             <h4><a>Speed</a></h4> 
+            <p><h5>You can provision any number of resources within minutes, testing, and launching new ideas to market much faster. You can focus on your core business activities because others fully manage the IT infrastructure and computing resources.</p></h5>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+          <div class="icon-box">
+           
+            <img src="{{ url_for('static', filename='img/performance.png') }}" class="img-fluid" alt="">&nbsp;&nbsp;&nbsp;&nbsp;
+            <h4><a>Performance</a></h4>
+            <p><h5>
+
+              Air Compute services come with strategically positioned data centers worldwide, empowering you to effortlessly expand your applications in locations proximate to your customers. Our cloud solutions offer a multitude of choices, allowing you to enhance computational performance and minimize network latency, ensuring a seamless and responsive experience for your users.
+
+            </p></h5>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="icon-box">
+            <img src="{{ url_for('static', filename='img/backup.jpg') }}" class="img-fluid" alt=""><br><br>
+            
+            <h4><a>Back up and recovery</a></h4>
+            <p><h5>Empower your backup and disaster recovery strategy with Air Compute services. Duplicate your applications across our resilient infrastructure, ensuring seamless continuity. If one server encounters a hiccup, rest easy knowing another swiftly takes over.</h5></p>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+          <div class="icon-box">
+            <img src="{{ url_for('static', filename='img/price$.png') }}" class="img-fluid" alt=""><br><br>
+            
+            <h4><a href="">Competitive pricing</a></h4>
+            <p><h5>AIR Compute services revolutionizes cloud computing, embracing an Infrastructure as a Service (IaaS) model where you pay solely for the resources you utilize. This approach not only fosters efficient IT resource management but also democratizes innovation by making cutting-edge cloud services affordable, especially for small businesses. Soar higher with AIR Compute – where cost-effective cloud solutions meet your unique needs.</h5></p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Services Section -->
+
+  
+  
+  <!-- ======= Pricing Section ======= -->
+  <section id="pricing" class="pricing">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Comparisons</h2>
+      </div>
+
+      <div class="row">
+        <table>
+          <thead>
+              <tr>
+                  <th class="white-text">Instance Type</th>
+                  <th class="white-text">CPU Performance</th>
+                  <th class="white-text">Memory</th>
+                  <th class="white-text">Usage</th>
+
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td class="blue-text" style="font-size: 20px;"><strong>AirCompute-Standard1</strong></td>
+                  <td class="blue-text"><strong>Balanced performance for various workloads.
+                  </strong></td>
+                  <td class="blue-text"><strong>Moderate memory capacity suitable for general-purpose applications.</strong></td>
+                  <td class="blue-text"><strong>Versatile for web hosting, development, and small to medium-sized applications.</strong></td>
+              </tr>
+              <tr>
+
+                  <td class="white-text" style="font-size: 20px;"><strong>AirCompute-MemoryOptimized</strong></td>
+                  <td class="white-text"><strong>Optimized for memory-intensive workloads.</strong></td>
+                  <td class="white-text"><strong>High memory capacity, ideal for database servers and in-memory caching.</strong></td>
+                  <td class="white-text"><strong>Excellent for databases, analytics, and applications demanding substantial memory resources.</strong></td>
+
+              </tr>
+              <tr>
+                <td class="blue-text" style="font-size: 20px;"><strong>AirCompute-HighCompute</strong></td>
+                <td class="blue-text"><strong>High-performance computing for demanding workloads.</strong></td>
+                <td class="blue-text"><strong>Balanced memory capacity for compute-intensive tasks.</strong></td>
+                <td class="blue-text"><strong>Well-suited for scientific modeling, simulation, and other compute-intensive applications.</strong></td>
+              </tr>
+              <tr>
+                <td class="white-text" style="font-size: 20px;"><strong>AirCompute-BurstableSmall</strong></td>
+                <td class="white-text"><strong>Burstable CPU performance, suitable for variable workloads.</strong></td>
+                <td class="white-text"><strong>Moderate memory capacity.</strong></td>
+                <td class="white-text"><strong>Cost-effective for development, testing, and applications with fluctuating resource needs.</strong></td>
+
+              </tr>
+              <td class="blue-text" style="font-size: 20px;"><strong>AirCompute-GPUEnhanced</strong></td>
+              <td class="blue-text"><strong>Balanced CPU with GPU acceleration.</strong></td>
+              <td class="blue-text"><strong>Adequate memory for GPU-accelerated tasks.</strong></td>
+              <td class="blue-text"><strong>Accelerated computing for machine learning, graphics rendering, and parallel processing.</strong></td>
+
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section><!-- End Pricing Section -->
+
+<!-- ======= Frequently Asked Questions Section ======= -->
+<section id="faq" class="faq section-bg">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>Frequently Asked Questions</h2>
+    </div>
+
+    <div class="faq-list">
+      <ul>
+        <li data-aos="fade-up" data-aos-delay="100">
+          <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">What sets AIR Compute apart from other cloud services? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+          <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+            <p>
+              AIR Compute offers cost-effective cloud solutions, allowing you to pay for the resources you use. Tailored for efficiency, it's ideal for businesses of all sizes.
+            </p>
+          </div>
+        </li>
+
+        <li data-aos="fade-up" data-aos-delay="100">
+          <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-1" class="collapse">How does AIR Compute foster innovation?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+          <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+            <p>By making advanced cloud services affordable, AIR Compute empowers small businesses to explore and implement cutting-edge technologies, driving innovation in a budget-friendly manner.</p>
+          </div>
+        </li>
+
+        <li data-aos="fade-up" data-aos-delay="100">
+          <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-1" class="collapse">Why choose AIR Compute for IT resource management?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+          <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+            <p>
+              AIR Compute excels with a pay-as-you-go IaaS model, optimizing IT resource usage. You pay only for what you need, ensuring efficient resource management and cost-effectiveness.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section><!-- End Frequently Asked Questions Section -->
+
+
+
+<section id="contact" class="contact">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>Contact</h2>
+      
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-6 d-flex align-items-stretch">
+        <div class="info">
+          <div class="address">
+            
+          </div>
+
+          <div class="email">
+            <i class="bi bi-envelope"></i>
+            <h4>Email:</h4>
+            <p>aircloud@gmail.com</p>
+          </div>
+
+          <div class="phone">
+            <i class="bi bi-phone"></i>
+            <h4>Call:</h4>
+            <p>+1 55894 55488 </p>
+          </div>
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2508.3337719162528!2d-114.05857222336289!3d51.046924544238074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53717ad00ad231a9%3A0x34c6c179aae00af8!2sBow%20Valley%20College%2C%20South%20Campus!5e0!3m2!1sen!2sca!4v1702276423083!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+        </div>
+
+      </div>
+
+      <div class="col-lg-6 mt-5 mt-lg-0 d-flex align-items-stretch">
+        <form  role="form" class="php-email-form" id ="myForm">
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="name">Your Name</label>
+              <input type="text" name="name" class="form-control" id="name" required>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="name">Your Email</label>
+              <input type="email" class="form-control" name="email" id="email" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="name">Subject</label>
+            <input type="text" class="form-control" name="subject" id="subject" required>
+          </div>
+          <div class="form-group">
+            <label for="name">Message</label>
+            <textarea class="form-control" name="message" rows="10" id="message"  required></textarea>
+          </div>
+         
+          <div class="text-center"><button type="submit" value="Submit">Send Message</button></div>
+        </form>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Contact Section -->
+  
+   
+  <div class="footer-newsletter">
+    <div class="container">
+      <div class="row justify-content-center">
+        <section id="pricing" class="pricing">
+          <div class="container" data-aos="fade-up">
+    
+            <div class="section-title">
+    
+              <div class="footer-newsletter">
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                      <div class="head"><h2> Our other offerings</h2></div>
+                      <h4>PaaS</h4>
+          
+                      <p>Checkout our PaaS related services</p><br>
+                      <a href="/Paas" class="buy-btn">Take me there</a>
+                  </div>
+          
+          
+                </div>
+              </div>
+          
+              <div class="footer-newsletter">
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                      <h4>Saas</h4>
+                      <p>Checkout our Saas related services</p><br>
+                      <a href="/Saas" class="buy-btn">Take me there</a>
+                  </div>
+          
+          
+                </div>
+              </div>
+            </div>
+    
+          </div>
+        </section>
+      </div>
+  
+  
+    </div>
+  </div>
  
 {% endblock %}

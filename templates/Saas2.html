@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
+<script type="text/javascript"> let headID = document.getElementsByTagName("head")[0]; let newCss = document.createElement('link'); newCss.rel = 'stylesheet'; newCss.type = 'text/css'; newCss.href = "https://botmake.io/embed/bot1631895.css"; let newScript = document.createElement('script'); newScript.src = "https://botmake.io/embed/bot1631895.js"; newScript.type = 'text/javascript'; headID.appendChild(newScript); headID.appendChild(newCss); </script>
+   
  <!-- ======= Hero Section ======= -->
  <section id="hero" class="d-flex align-items-center">
 
@@ -35,7 +37,7 @@
 
         <div class="row">
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch " data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box"><br><br>
+            <div class="icon-box"><img src="{{ url_for('static', filename='img/encryption.png') }}" class="img-fluid" alt=""><br><br>
               <!-- <div class="icon"><i class="bx bxl-dribbble"></i></div> -->
                <h4><a>Military-Grade Encryption: </a></h4> 
               <p><h5>Keep your online activities confidential with our state-of-the-art encryption protocols. Your data is secure, whether you're browsing, streaming, or conducting business online.</p></h5>
@@ -43,7 +45,7 @@
           </div>
 
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box">
+            <div class="icon-box"><img src="{{ url_for('static', filename='img/global.png') }}" class="img-fluid" alt="" type="image/webp"><br><br>
 
               <h4><a>Global Server Network: </a></h4>
               <p><h5>Access content from anywhere in the world with our extensive server network. Enjoy fast and reliable connections, no matter where you are.
@@ -54,7 +56,7 @@
 
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
-              
+              <img src="{{ url_for('static', filename='img/vpn (1).png') }}" class="img-fluid" alt=""><br><br>
               <h4><a>No Logging Policy: </a></h4>
               <p><h5>We respect your privacy. Our strict no-logs policy means we don't track or store your online activity. Your data is yours and yours alone.</h5></p>
             </div>
@@ -62,8 +64,8 @@
 
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
             <div class="icon-box">
-              
-              <h4><a href="">Multi-Platform Support: </a></h4>
+              <img src="{{ url_for('static', filename='img/multi1.png') }}" class="img-fluid" alt=""><br><br>
+              <h4><a>Multi-Platform Support: </a></h4>
               <p><h5>Use our VPN seamlessly across all your devices. Whether you're on your desktop, laptop, tablet, or smartphone, we've got you covered.</h5></p>
             </div>
           </div>
@@ -89,6 +91,77 @@
       </div>
     </section><!-- End Pricing Section -->
 
+    <section id="pricing" class="pricing">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <table>
+            <thead>
+                <tr>
+                    <th class="white-text"></th>
+                    <th class="white-text">Complete $4.99/mo</th>
+                    <th class="white-text">Plus $3.99/mo</th>
+                    <th class="white-text">Standard $2.99/mo</th>
+                    <th class="white-text">Free Trial/30Gb</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="blue-text" style="font-size: 20px;"><strong> Secure, high-speed VPN</strong></td>
+                    <td><span class="tick">&#10004;</span></td>
+                    <td><span class="tick">&#10004;</span></td>
+                    <td><span class="tick">&#10004;</span></td>
+                    <td><span class="tick">&#10004;</span></td>
+                </tr>
+                <tr>
+
+                    <td class="white-text" style="font-size: 20px;"><strong> Malware protection</strong></td>
+                    <td><span class="tick">&#10004;</span></td>
+                    <td><span class="tick">&#10004;</span></td>
+                    <td><span class="tick">&#10004;</span></td>
+                    <td><span class="cross">&#10008;</span></td>
+                </tr>
+                <tr>
+                  <td class="blue-text" style="font-size: 20px;"><strong> Tracker and ad blocker
+                  </strong></td>
+                  <td><span class="tick">&#10004;</span></td>
+                  <td><span class="tick">&#10004;</span></td>
+                  <td><span class="tick">&#10004;</span></td>
+                  <td><span class="cross">&#10008;</span></td>
+                </tr>
+                <tr>
+                  <td class="white-text" style="font-size: 20px;"><strong> Cross-platform password manager</strong></td>
+                  <td><span class="tick">&#10004;</span></td>
+                  <td><span class="tick">&#10004;</span></td>
+                  <td><span class="cross">&#10008;</span></td>
+                  <td><span class="cross">&#10008;</span></td>
+                </tr>
+                <tr>
+                    <td class="blue-text" style="font-size: 20px;"><strong> Data breach scanner
+                    </strong></td>
+                    <td><span class="tick">&#10004;</span></td>
+                    <td><span class="tick">&#10004;</span></td>
+                    <td><span class="cross">&#10008;</span></td>
+                    <td><span class="cross">&#10008;</span></td>
+                </tr>
+                <tr>
+
+                    <td class="white-text" style="font-size: 20px;"><strong> 1 TB cloud storage</strong></td>
+                    <td><span class="tick">&#10004;</span></td>
+                    <td><span class="cross">&#10008;</span></td>
+                    <td><span class="cross">&#10008;</span></td>
+                    <td><span class="cross">&#10008;</span></td>
+                </tr>
+                <tr>
+                  <td class="blue-text" style="font-size: 20px;"><strong> Next-generation file encryption</strong></td>
+                  <td><span class="tick">&#10004;</span></td>
+                  <td><span class="cross">&#10008;</span></td>
+                  <td><span class="cross">&#10008;</span></td>
+                  <td><span class="cross">&#10008;</span></td>
+                </tr>
+            </tbody>
+          </table>
+      </div>
+    </section>
     <!-- ======= Frequently Asked Questions Section ======= -->
     <section id="faq" class="faq section-bg">
         <div class="container" data-aos="fade-up">
@@ -108,36 +181,36 @@
                 </div>
               </li>
   
-              <li data-aos="fade-up" data-aos-delay="200">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Is my data secure with a VPN? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+              <li data-aos="fade-up" data-aos-delay="100">
+                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-1" class="collapse">Is my data secure with a VPN? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
                   <p>
                     Yes, our VPN service supports multiple devices. Whether you're using a desktop, laptop, tablet, or smartphone, you can enjoy a secure connection across all your devices.
                   </p>
                 </div>
               </li>
   
-              <li data-aos="fade-up" data-aos-delay="300">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Can I use a VPN on multiple devices? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+              <li data-aos="fade-up" data-aos-delay="100">
+                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-1" class="collapse">Can I use a VPN on multiple devices? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
                   <p>
                     Yes, SaaS providers implement robust security measures to protect user data. This includes encryption, regular security updates, and compliance with industry standards.
                   </p>
                 </div>
               </li>
   
-              <li data-aos="fade-up" data-aos-delay="400">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">How does a VPN protect me on public Wi-Fi? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+              <li data-aos="fade-up" data-aos-delay="100">
+                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-1" class="collapse">How does a VPN protect me on public Wi-Fi? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
                   <p>
                     When connected to public Wi-Fi, a VPN encrypts your internet traffic, preventing potential hackers from accessing your data. It adds an extra layer of security, ensuring your sensitive information remains private.
                   </p>
                 </div>
               </li>
   
-              <li data-aos="fade-up" data-aos-delay="500">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Do you keep logs of my online activities? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+              <li data-aos="fade-up" data-aos-delay="100">
+                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-1" class="collapse">Do you keep logs of my online activities? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
                   <p>
                     No, we strictly adhere to a no-logs policy. We don't monitor, track, or store any information about your online activities. Your privacy is our priority.
                   </p>
@@ -151,64 +224,116 @@
       </section><!-- End Frequently Asked Questions Section -->
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-        <div class="container" data-aos="fade-up">
+ <section id="contact" class="contact">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>Contact</h2>
       
-          <div class="section-title">
-            <h2>Contact</h2>
-           
-          </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-6 d-flex align-items-stretch">
+        <div class="info">
+          <div class="address">
             
-            <div class="col-lg-13 mt-5 mt-lg-0 d-flex align-items-stretch">
-              <div id="result"></div>
-              <form   role="form" class="php-email-form">
-                
-                <div class="row">
-                  <div class="form-group col-md-6">
-                    <label for="name">Your Name</label>
-                    <input type="text" name="name" class="form-control" id="name" required>
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="name">Your Email</label>
-                    <input type="email" class="form-control" name="email" id="email" required>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="name">Subject</label>
-                  <input type="text" class="form-control" name="subject" id="subject" required>
-                </div>
-                <div class="form-group">
-                  <label for="name">Message</label>
-                  <textarea class="form-control" name="message" rows="10" required></textarea>
-                </div>
-               
-                <div class="text-center"><button type="submit" onclick="submitForm()">Send Message</button></div>
-              </form>
-            </div>
-      
           </div>
-      
+
+          <div class="email">
+            <i class="bi bi-envelope"></i>
+            <h4>Email:</h4>
+            <p>aircloud@gmail.com</p>
+          </div>
+
+          <div class="phone">
+            <i class="bi bi-phone"></i>
+            <h4>Call:</h4>
+            <p>+1 55894 55488 </p>
+          </div>
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2508.3337719162528!2d-114.05857222336289!3d51.046924544238074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53717ad00ad231a9%3A0x34c6c179aae00af8!2sBow%20Valley%20College%2C%20South%20Campus!5e0!3m2!1sen!2sca!4v1702276423083!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
         </div>
-      </section><!-- End Contact Section -->
-    <!-- End Contact Section -->
+
+      </div>
+
+      <div class="col-lg-6 mt-5 mt-lg-0 d-flex align-items-stretch">
+        <form  role="form" class="php-email-form" id ="myForm">
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="name">Your Name</label>
+              <input type="text" name="name" class="form-control" id="name" required>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="name">Your Email</label>
+              <input type="email" class="form-control" name="email" id="email" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="name">Subject</label>
+            <input type="text" class="form-control" name="subject" id="subject" required>
+          </div>
+          <div class="form-group">
+            <label for="name">Message</label>
+            <textarea class="form-control" name="message" rows="10" id="message"  required></textarea>
+          </div>
+         
+          <div class="text-center"><button type="submit" value="Submit">Send Message</button></div>
+        </form>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Contact Section -->
+
 
   </main><!-- End #main -->
 
-
-   <!-- ======= Footer ======= -->
-  <footer id="footer">
-
-    <div class="footer-newsletter">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
+  <div class="footer-newsletter">
+    <div class="container">
+      <div class="row justify-content-center">
+        <section id="pricing" class="pricing">
+          <div class="container" data-aos="fade-up">
+    
             <div class="section-title">
-                <h2>Why wanna give it a try?</h2>
-                <p>Ready to take control of your online security and privacy? Sign up for AIR VPN today and enjoy the freedom of a secure and unrestricted internet. Join the millions of users who trust us to protect their online presence.</p>
+    
+              <div class="footer-newsletter">
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                      <div class="head"><h2> Our other offerings</h2></div>
+                      <h4>PaaS</h4>
+          
+                      <p>Checkout our PaaS related services</p><br>
+                      <a href="/Paas" class="buy-btn">Take me there</a>
+                  </div>
+          
+          
+                </div>
               </div>
-              <a href="Air M@il\getvmail.com\index.html"><p style="text-align:center">Sign Up</p></a>
+          
+              <div class="footer-newsletter">
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                      <h4>IaaS</h4>
+                      <p>Checkout our IaaS related services</p><br>
+                      <a href="/Iaas" class="buy-btn">Take me there</a>
+                  </div>
+          
+          
+                </div>
+              </div>
             </div>
-
+    
+          </div>
+        </section>
       </div>
+  
+  
     </div>
+  </div>
+
+
     {% endblock %}
